@@ -1,5 +1,4 @@
 @import '../../styles/variable';
-
 $colors: (
   "accent": (
     19: rgb(0, 38, 202, 19%),
@@ -22,7 +21,7 @@ $colors: (
     65: rgb(95, 216, 85, 65%),
     60: rgb(95, 216, 85, 60%),
     19: rgb(44, 148, 35, 19%)
-  ),
+  ), 
   "alert": (
     100: #FFB800,
     90: rgb(255, 184, 0, 90%),
@@ -88,6 +87,22 @@ $colors: (
     .btn-#{$category}-#{$key} {
       background-color: $value; 
       color: $light-100;
+
+      &:not(.btn-outline-#{$category}-#{$key}){
+        border: none;
+      }
+    }
+
+    .btn-outline-#{$category}-#{$key} {
+        background-color: transparent; 
+        border: 1px solid $value ;
+        color: $value;
+
+        &:hover{
+            background-color: $value;
+            color: $light-100;
+            transition: background-color 0.2s ease-out;
+        }
     }
   }
 }
