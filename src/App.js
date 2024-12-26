@@ -4,10 +4,9 @@ import styled from '@emotion/styled';
 import Card from './components/cardComponent/Card';
 
 const FlexBox = styled.div`
-  display:flex;
-  gap: 10px;
-  align-items: center;
-  flex-wrap: wrap;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 5px;
 `;
 
 
@@ -78,7 +77,62 @@ function App() {
   
     </FlexBox >
 
+        <FlexBox>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='md' 
+                rounded='0'
+                color='accent-60' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='small' 
+                color='accent-60' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='large' 
+                color='accent-60' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='small' 
+                color='accent-60' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='small' 
+                color='accent-60' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='small' 
+                color='outline-error-100' />
+              </div>
+              <div>
+                <Button 
+                label="Piece UI Button"  
+                className='btn-primary' 
+                btnSize='small' 
+                rounded='0'
+                color='outline-accent-75' />
+              </div>
+        </FlexBox>
     </>
+
+   
   );
 }
 
