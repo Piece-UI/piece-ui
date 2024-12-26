@@ -2,11 +2,11 @@ import React from "react";
 import Button from "../Button/Button";
 import "./card.css";
 
-import styled from "@emotion/styled/macro";
+// import styled from "@emotion/styled/macro";
 
-const cardPiece = styled.div`
-    background-color: ${({bgCustomColor}) => bgCustomColor};
-`;
+// const cardPiece = styled.div`
+//     background-color: ${({bgCustomColor}) => bgCustomColor};
+// `;
 
 const Card = ({
   cardHeading,
@@ -21,7 +21,8 @@ const Card = ({
   textClor,
   cardRound,
 }) => {
-  <cardPiece className="card" bgCustomecolor={bgCustomecolor}>
+  return (
+    <div className="card">
       <div className="card-head">
         <h2 className="card-heading">{cardHeading}</h2>
         <div className="card-head-action">
@@ -93,7 +94,8 @@ const Card = ({
           <Button label="OK" className="btn-primary"></Button>
         </div>
       }
-  </cardPiece>;
+    </div>
+  );
 };
 
 export default Card;
