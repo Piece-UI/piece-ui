@@ -37,7 +37,6 @@ const ButtonPiece = styled.button`
   .imgicon{
     width: 18px;
   };
-
 `;
 
 const Button = ({ 
@@ -50,6 +49,7 @@ const Button = ({
     imgIconBefore, 
     rounded,
     imgIconAfter}) => (
+
     <ButtonPiece 
         type={type} 
         onClick={onClick}
