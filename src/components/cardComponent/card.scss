@@ -1,0 +1,46 @@
+.card{
+    width: 33.33%;
+    .card-head{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 8px 15px;
+       
+    }
+    .card-head-action{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+        .card-share, .card-setting, .card-close{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .card-body{
+        img{
+            margin-top: 15px;
+        }
+        .card-content{
+            padding: 8px 15px;
+            
+            .card-text{
+                margin-top: 15px;
+            }
+        }
+    }
+    .card-footer{
+        margin-top: 15px;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    
+}
+.img-responisve{
+    width: 100%;
+    height: auto;
+}

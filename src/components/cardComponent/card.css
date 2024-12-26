@@ -1,0 +1,42 @@
+.card {
+  width: 33.33%;
+}
+.card .card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 8px 15px;
+}
+.card .card-head-action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+.card .card-head-action .card-share, .card .card-head-action .card-setting, .card .card-head-action .card-close {
+  width: 25px;
+  height: 25px;
+}
+.card .card-body img {
+  margin-top: 15px;
+}
+.card .card-body .card-content {
+  padding: 8px 15px;
+}
+.card .card-body .card-content .card-text {
+  margin-top: 15px;
+}
+.card .card-footer {
+  margin-top: 15px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.img-responisve {
+  width: 100%;
+  height: auto;
+}/*# sourceMappingURL=card.css.map */
