@@ -29,7 +29,7 @@ const ButtonPiece = styled.button`
       case 'large':
         return '14px';
       default:
-        return '14px';
+        return '12px';
     }
   }};
 
@@ -48,7 +48,6 @@ const Button = ({
     btnSize, 
     imgIconBefore, 
     rounded,
-    className,
     imgIconAfter}) => (
     <ButtonPiece 
         type={type} 
