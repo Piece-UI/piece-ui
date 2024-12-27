@@ -84,12 +84,12 @@ $colors: (
 
 @each $category, $values in $colors {
   @each $key, $value in $values {
-    .btn--#{$category}--#{$key} {
+    .piece__btn--#{$category}--#{$key} {
       background-color:$value; 
       color: $light-100;
       transition-duration: 0.2s;
 
-      &:not(.btn--outline--#{$category}--#{$key}){
+      &:not(.piece__btn--outline--#{$category}--#{$key}){
         border: none;
       }
       &:hover{
@@ -98,7 +98,7 @@ $colors: (
       }
     }
 
-    .btn--outline--#{$category}--#{$key} {
+    .piece__btn--outline--#{$category}--#{$key} {
         background-color: transparent; 
         border: 1px solid $value ;
         color: $value;
