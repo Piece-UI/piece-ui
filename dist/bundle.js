@@ -1939,7 +1939,7 @@ var App = (function (exports, React) {
   });
 
   var _templateObject;
-  const ButtonPiece = newStyled.button(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  border-radius: 4px;\n  display: flex;\n  align-items:center;\n  gap: 5px;\n  cursor: pointer;\n  background-color: ", ";\n  border-radius: ", ";\n  \n  padding: ", ";\n\n  font-size: ", ";\n\n  .imgicon{\n    width: 18px;\n  };\n\n"])), _ref => {
+  const ButtonPiece = newStyled.button(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n  border-radius: 4px;\n  display: flex;\n  align-items:center;\n  gap: 5px;\n  cursor: pointer;\n  background-color: ", ";\n  border-radius: ", ";\n  padding: ", ";\n\n  font-size: ", ";\n\n  .imgicon{\n    width: 18px;\n  };\n\n"])), _ref => {
     let {
       bgCustomColor
     } = _ref;
@@ -1969,13 +1969,13 @@ var App = (function (exports, React) {
     } = _ref4;
     switch (btnSize) {
       case 'small':
-        return '12px';
+        return '10px';
       case 'md':
-        return '14px';
+        return '12px';
       case 'large':
-        return '16px';
-      default:
         return '14px';
+      default:
+        return '12px';
     }
   });
   const Button = _ref5 => {
@@ -1988,6 +1988,7 @@ var App = (function (exports, React) {
       btnSize,
       imgIconBefore,
       rounded,
+      className,
       imgIconAfter
     } = _ref5;
     return /*#__PURE__*/React__default["default"].createElement(ButtonPiece, {
@@ -1996,7 +1997,7 @@ var App = (function (exports, React) {
       bgCustomColor: bgCustomColor,
       btnSize: btnSize,
       rounded: rounded,
-      className: "btn btn-".concat(color)
+      className: "btn btn-".concat(color, " ").concat(className)
     }, imgIconBefore ? /*#__PURE__*/React__default["default"].createElement("img", {
       src: imgIconBefore,
       alt: label,

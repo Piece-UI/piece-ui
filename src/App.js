@@ -6,65 +6,29 @@ const FlexBox = styled.div`
   display:grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 5px;
+  .avatar{
+    border-radius: 100%;
+  }
 `;
 
 
+const testfn = () => {alert("hello")};
+
 function App() {
   return (
-        <FlexBox>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='md' 
-                rounded='0'
-                color='accent-60' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='small' 
-                color='accent-60' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
+    <FlexBox>
+          <div>
+              <Button 
+                imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20' 
+                className='avatar'/>}   
                 className='btn-primary' 
                 btnSize='large' 
-                color='accent-60' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='small' 
-                color='accent-60' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='small' 
-                color='accent-60' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='small' 
-                color='outline-error-100' />
-              </div>
-              <div>
-                <Button 
-                label="Piece UI Button"  
-                className='btn-primary' 
-                btnSize='small' 
-                rounded='0'
-                color='outline-accent-75' />
-              </div>
-        </FlexBox>
-   
+                rounded='60px' 
+                color='accent--65'
+                disabled={false}
+                onClick={testfn} />
+          </div>
+    </FlexBox>
   );
 }
 
