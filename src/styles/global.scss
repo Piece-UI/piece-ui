@@ -1,4 +1,3 @@
-@import '../../styles/variable';
 $colors: (
   "accent": (
     19: rgb(0, 38, 202, 19%),
@@ -84,31 +83,9 @@ $colors: (
 
 @each $category, $values in $colors {
   @each $key, $value in $values {
-    .piece__btn--#{$category}--#{$key} {
+    .bg__#{$category}--#{$key} {
       background-color:$value; 
-      color: $light-100;
-      transition-duration: 0.2s;
-
-      &:not(.piece__btn--outline--#{$category}--#{$key}){
-        border: none;
-      }
-      &:hover{
-        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-        background-color: darken($value, 10%);
-      }
-    }
-
-    .piece__btn--outline--#{$category}--#{$key} {
-        background-color: transparent; 
-        border: 1px solid $value ;
-        color: $value;
-
-        &:hover{
-            color: $light-100;
-            transition: background-color 0.2s ease-out;
-            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
-            background-color: lighten($value, 5%);
-        }
+      color: white;
     }
   }
 }

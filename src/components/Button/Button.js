@@ -63,7 +63,7 @@ const Button = ({
         btnSize={btnSize}
         rounded={rounded}
         disabled={disabled}
-        className={`btn btn--${color} ${className} ${disabled === true ? 'btn--disabled' : ''}`}>
+        className={`piece__btn piece__btn--${color} ${className} ${disabled === true ? 'piece__btn--disabled' : ''}`}>
         {imgIconBefore ? imgIconBefore : ''}
         {iconBefore ? iconBefore : ''}
         {label}
