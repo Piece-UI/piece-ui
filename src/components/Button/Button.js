@@ -10,7 +10,6 @@ const ButtonPiece = styled.button`
   cursor: pointer;
   background-color: ${({bgCustomColor}) => bgCustomColor};
   border-radius: ${({rounded}) => rounded};
-  
   padding: ${({btnSize}) =>{
     switch (btnSize) {
       case 'small' : return '6px 12px '
@@ -24,11 +23,11 @@ const ButtonPiece = styled.button`
   font-size: ${({ btnSize }) => {
     switch (btnSize) {
       case 'small':
-        return '12px';
+        return '10px';
       case 'md':
-        return '14px';
+        return '12px';
       case 'large':
-        return '16px';
+        return '14px';
       default:
         return '14px';
     }
@@ -49,6 +48,7 @@ const Button = ({
     btnSize, 
     imgIconBefore, 
     rounded,
+    className,
     imgIconAfter}) => (
     <ButtonPiece 
         type={type} 
@@ -56,12 +56,10 @@ const Button = ({
         bgCustomColor={bgCustomColor} 
         btnSize={btnSize}
         rounded={rounded}
-        className={`btn btn-${color}`}>
-
+        className={`btn btn-${color} ${className}`}>
         {imgIconBefore ? <img src={imgIconBefore} alt={label} className='imgicon' /> : ''}
         <span>{label}</span>
         {imgIconAfter ? <img src={imgIconAfter} alt={label} className='imgicon' /> : ''}
-        
     </ButtonPiece>
 );
 

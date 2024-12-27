@@ -87,9 +87,13 @@ $colors: (
     .btn-#{$category}-#{$key} {
       background-color: $value; 
       color: $light-100;
+      transition-duration: 0.4s;
 
       &:not(.btn-outline-#{$category}-#{$key}){
         border: none;
+      }
+      &:hover{
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
       }
     }
 
@@ -102,6 +106,7 @@ $colors: (
             background-color: $value;
             color: $light-100;
             transition: background-color 0.2s ease-out;
+            box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
         }
     }
   }
