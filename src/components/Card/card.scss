@@ -1,5 +1,5 @@
-.card{
-    .card-head{
+.piece--card{
+    .piece--cardHead{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -7,29 +7,32 @@
         padding: 8px 15px;
        
     }
-    .card-head-action{
+    .piece--text__elipese{
+        max-width: 100px;
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .piece--card-headAction{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 15px;
-        .card-share, .card-setting, .card-close{
-            width: 25px;
-            height: 25px;
-        }
     }
-    .card-body{
+    .piece--cardBody{
         img{
             margin-top: 15px;
         }
-        .card-content{
+        .piece--cardContent{
             padding: 8px 15px;
             
-            .card-text{
+            .piece--cardText{
                 margin-top: 15px;
             }
         }
     }
-    .card-footer{
+    .piece--cardFooter{
         margin-top: 15px;
         padding: 8px 15px;
         display: flex;

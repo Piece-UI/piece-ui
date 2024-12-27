@@ -5,6 +5,8 @@ import styled from "@emotion/styled";
 
 const CardPiece = styled.div`
     background-color: ${({bgCustomColor}) => bgCustomColor};
+    border-radius:${({cardRound})=>cardRound};
+    padding:15px;
 `;
 // footer, classname, typo, events
 const Card = ({
@@ -15,14 +17,16 @@ const Card = ({
   cardText,
   bgCustomColor,
   bgColorclass,
-  textClor,
+  textColor,
   cardRound,
+  footerActions=[]
+
 }) => {
   return (
-    <CardPiece className="card"  bgCustomColor={bgCustomColor}>
-      <div className="card-head">
-        <h2 className="card-heading" title={cardHeading}>{cardHeading}</h2>
-        <div className="card-head-action">
+    <CardPiece className="piece--card"  bgCustomColor={bgCustomColor} cardRound={cardRound} style={{color:(bgCustomColor)? textColor:''}}>
+      <div className="piece--cardHead">
+        <h2 className={`piece--cardHeading ${(cardHeading.length> 10)? 'piece--text__elipese':''}`} title={cardHeading}>{cardHeading}</h2>
+        <div className="piece--card-headAction">
             {actions.map((action, index) => (
               <div key={index}>
                 <img 
@@ -36,7 +40,7 @@ const Card = ({
             ))}
         </div>
       </div>
-      <div className="card-body">
+      <div className="piece--cardBody">
         {cadrImg ? (
           <img
             className="img-responisve"
@@ -48,20 +52,26 @@ const Card = ({
         ) : (
           ""
         )}
-        <div className="card-content">
+        <div className="piece--cardContent">
           {cardBodyTitle ? (
-            <h5 className="card-body-title">{cardBodyTitle}</h5>
+            <h5 className="piece--card-bodyTitle">{cardBodyTitle}</h5>
           ) : (
             ""
           )}
-          {cardText ? <p className="card-text">{cardText}</p> : ""}
+          {cardText ? <p className="piece--cardText">{cardText}</p> : ""}
         </div>
       </div>
-      {
-        <div className="card-footer">
-          <Button color='outline-error-100' label="Cancel"></Button>
-          <Button color='accent-60' label="OK" className="btn-primary"></Button>
+      {(footerActions) && (
+        <div className="piece--cardFooter">
+          {footerActions.map((footerAction, index)=>(
+            <Button key={index} label={footerAction.btnText} onClick={footerAction.onClick} color={footerAction.color}></Button>
+          ))
+
+          }
+          {/* <Button color='outline-error-100' label="Cancel"></Button>
+          <Button color='accent-60' label="OK" className="btn-primary"></Button> */}
         </div>
+      )
       }
     </CardPiece>
   );
