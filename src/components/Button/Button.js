@@ -13,8 +13,8 @@ const ButtonPiece = styled.button`
   padding: ${({btnSize}) =>{
     switch (btnSize) {
       case 'small' : return '6px 12px '
-      case 'md' : return '8px 6px'
-      case 'large' : return '12px 10px'
+      case 'md' : return '8px 10px'
+      case 'large' : return '12px 12px'
       default:
         return '8px 6px'
     }
@@ -33,10 +33,6 @@ const ButtonPiece = styled.button`
     }
   }};
 
-  .imgicon{
-    width: 18px;
-  };
-
 `;
 
 const Button = ({ 
@@ -48,6 +44,9 @@ const Button = ({
     btnSize, 
     imgIconBefore, 
     rounded,
+    iconBefore,
+    iconAfter,
+    className,
     imgIconAfter}) => (
     <ButtonPiece 
         type={type} 
@@ -55,10 +54,12 @@ const Button = ({
         bgCustomColor={bgCustomColor} 
         btnSize={btnSize}
         rounded={rounded}
-        className={`btn btn-${color} ${className}`}>
-        {imgIconBefore ? <img src={imgIconBefore} alt={label} className='imgicon' /> : ''}
+        className={`btn btn--${color} ${className}`}>
+        {imgIconBefore ? imgIconBefore : ''}
+        {iconBefore ? iconBefore : ''}
         <span>{label}</span>
-        {imgIconAfter ? <img src={imgIconAfter} alt={label} className='imgicon' /> : ''}
+        {iconAfter ? iconAfter : ''}
+        {imgIconAfter ? imgIconAfter : ''}
     </ButtonPiece>
 );
 
