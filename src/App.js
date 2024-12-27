@@ -12,19 +12,21 @@ const FlexBox = styled.div`
 `;
 
 
+const testfn = () => {alert("hello")};
+
 function App() {
   return (
     <FlexBox>
           <div>
               <Button 
-                label="Piece UI Button" 
                 imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20' 
                 className='avatar'/>}   
-                iconAfter={<i class="fa-solid fa-chevron-right"></i>} 
                 className='btn-primary' 
                 btnSize='large' 
-                rounded='8px' 
-                color='accent--65' />
+                rounded='60px' 
+                color='accent--65'
+                disabled={false}
+                onClick={testfn} />
           </div>
     </FlexBox>
   );

@@ -1,12 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 import './Button.css';
 
 const ButtonPiece = styled.button`
   border-radius: 4px;
   display: flex;
   align-items:center;
-  gap: 5px;
+  gap: 8px;
   cursor: pointer;
   background-color: ${({bgCustomColor}) => bgCustomColor};
   border-radius: ${({rounded}) => rounded};
@@ -33,6 +34,12 @@ const ButtonPiece = styled.button`
     }
   }};
 
+  &.btn--disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none
+  }
+
 `;
 
 const Button = ({ 
@@ -47,6 +54,7 @@ const Button = ({
     iconBefore,
     iconAfter,
     className,
+    disabled,
     imgIconAfter}) => (
     <ButtonPiece 
         type={type} 
@@ -54,13 +62,29 @@ const Button = ({
         bgCustomColor={bgCustomColor} 
         btnSize={btnSize}
         rounded={rounded}
-        className={`btn btn--${color} ${className}`}>
+        disabled={disabled}
+        className={`btn btn--${color} ${className} ${disabled === true ? 'btn--disabled' : ''}`}>
         {imgIconBefore ? imgIconBefore : ''}
         {iconBefore ? iconBefore : ''}
-        <span>{label}</span>
+        {label}
         {iconAfter ? iconAfter : ''}
         {imgIconAfter ? imgIconAfter : ''}
     </ButtonPiece>
 );
+
+ButtonPiece.propTypes = {
+  label : PropTypes.string,
+  onClick: PropTypes.func,
+  color: PropTypes.string,
+  bgCustomColor : PropTypes.string,
+  btnSize : PropTypes.oneOf[('small', 'mid', 'large')],
+  rounded : PropTypes.string,
+  iconBefore : PropTypes.string,
+  iconAfter : PropTypes.string,
+  imgIconBefore : PropTypes.string,
+  imgIconAfter : PropTypes.string,
+  disabled : PropTypes.string,
+}
+
 
 export default Button;
