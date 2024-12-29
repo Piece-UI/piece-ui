@@ -23,7 +23,7 @@ const CardExample = ({FlexBox}) => {
                 footerActions={[
                     {
                         btnText: 'Cancel',
-                        color: 'outline-error-100',
+                        className:'btn-primary',
                         onClick: testFn
                     },
                     {
@@ -60,7 +60,7 @@ const CardExample = ({FlexBox}) => {
                 footerActions={[
                     {
                         btnText: 'Cancel',
-                        color: 'outline-error-100',
+                        className:'btn-primary',
                         onClick: testFn
                     },
                     {

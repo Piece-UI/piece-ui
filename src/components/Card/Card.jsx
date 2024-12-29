@@ -4,9 +4,9 @@ import "./card.css";
 import styled from "@emotion/styled";
 
 const CardPiece = styled.div`
-    background-color: ${({bgCustomColor}) => bgCustomColor};
-    border-radius:${({cardRound})=>cardRound};
-    padding:15px;
+  background-color: ${({ bgCustomColor }) => bgCustomColor};
+  border-radius: ${({ cardRound }) => cardRound};
+  padding: 15px;
 `;
 // footer, classname, typo, events
 const Card = ({
@@ -19,25 +19,36 @@ const Card = ({
   bgColor,
   textColor,
   cardRound,
-  footerActions=[]
-
+  footerActions = [],
 }) => {
   return (
-    <CardPiece className={`piece__card ${bgColor}`}  bgCustomColor={bgCustomColor} cardRound={cardRound} style={{color:(bgCustomColor)? textColor:''}}>
+    <CardPiece
+      className={`piece__card ${bgColor}`}
+      bgCustomColor={bgCustomColor}
+      cardRound={cardRound}
+      style={{ color: bgCustomColor ? textColor : "" }}
+    >
       <div className="piece__cardHead">
-        <h2 className={`piece__cardHeading ${(cardHeading.length> 12)? 'piece__text--elipese':''}`} title={cardHeading}>{cardHeading}</h2>
+        <h2
+          className={`piece__cardHeading ${
+            cardHeading.length > 12 ? "piece__text--elipese" : ""
+          }`}
+          title={cardHeading}
+        >
+          {cardHeading}
+        </h2>
         <div className="piece__card__headAction">
-            {actions.map((action, index) => (
-              <div key={index}>
-                <img 
-                  src={action.icon}
-                  alt={action.icon}
-                  width='25'
-                  height='25'
-                  onClick={action.onClick}
-                />
-              </div> 
-            ))}
+          {actions.map((action, index) => (
+            <div key={index}>
+              <img
+                src={action.icon}
+                alt={action.icon}
+                width="25"
+                height="25"
+                onClick={action.onClick}
+              />
+            </div>
+          ))}
         </div>
       </div>
       <div className="piece__cardBody">
@@ -61,17 +72,15 @@ const Card = ({
           {cardText ? <p className="piece__cardText">{cardText}</p> : ""}
         </div>
       </div>
-      {(footerActions) && (
+      {/* {footerActions && (
         <div className="piece__cardFooter">
-          {footerActions.map((footerAction, index)=>(
-            <Button key={index} label={footerAction.btnText} onClick={footerAction.onClick} color={footerAction.color}></Button>
-          ))
+          {footerActions.map((footerAction, index) => (
+              return (
 
-          }
-
+              )
+          ))}
         </div>
-      )
-      }
+      )} */}
     </CardPiece>
   );
 };
