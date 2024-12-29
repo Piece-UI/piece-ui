@@ -2,59 +2,108 @@ import Button from "../components/Button/Button";
 
 
 
-const ButtonExample = ({FlexBox}) => {
+const ButtonExample = ({ FlexBox }) => {
+    const testfn = () => { alert("Hello") };
+
     return (
         <FlexBox>
             <div>
                 <Button
-                    label="Piece UI Button"
-                    className='btn-primary'
-                    btnSize='md'
-                    rounded='70px'
-                    color='accent-60' />
-            </div>
-            <div>
-                <Button
-                    label="Piece UI Button"
-                    className='btn-primary'
-                    btnSize='small'
-                    color='accent-60' />
-            </div>
-            <div>
-                <Button
-                    label="Piece UI Button"
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
                     btnSize='large'
-                    color='accent-60' />
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
             </div>
             <div>
                 <Button
-                    label="Piece UI Button"
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
-                    btnSize='small'
-                    color='accent-60' />
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
             </div>
             <div>
                 <Button
-                    label="Piece UI Button"
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
-                    btnSize='small'
-                    color='accent-60' />
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
             </div>
             <div>
                 <Button
-                    label="Piece UI Button"
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
-                    btnSize='small'
-                    color='outline-error-100' />
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
             </div>
             <div>
                 <Button
-                    label="Piece UI Button"
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
-                    btnSize='small'
-                    rounded='0'
-                    color='outline-accent-75' />
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
+            </div>
+            <div>
+                <Button
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
+                    className='btn-primary'
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
+            </div>
+            <div>
+                <Button
+                    label='Piece Button UI'
+                    imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                        className='avatar' />}
+                    iconBefore={<i class="fa-solid fa-user"></i>}
+                    iconAfter={<i class="fa-solid fa-chevron-right"></i>}
+                    className='btn-primary'
+                    btnSize='large'
+                    rounded='8px'
+                    color='accent--65'
+                    disabled={false}
+                    onClick={testfn} />
             </div>
         </FlexBox>
     )

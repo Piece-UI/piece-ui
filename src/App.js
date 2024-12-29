@@ -10,10 +10,13 @@ const FlexBox = styled.div`
   display:grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 5px;
+  row-gap:10px;
+  .avatar{
+    border-radius: 100%;
+  }
 `;
 
 function App() {
-  // const testFn = () => { alert("Hello") };
 
   return (
     <>
@@ -26,7 +29,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-
 
   );
 }
