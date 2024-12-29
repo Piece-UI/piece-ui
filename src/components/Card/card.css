@@ -1,33 +1,33 @@
-.piece--card .piece--cardHead {
+.piece__card .piece__cardHead {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
   padding: 8px 15px;
 }
-.piece--card .piece--text__elipese {
+.piece__card .piece__text--elipese {
   max-width: 100px;
   width: 100%;
   overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.piece--card .piece--card-headAction {
+.piece__card .piece__card__headAction {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 15px;
 }
-.piece--card .piece--cardBody img {
+.piece__card .piece__cardBody img {
   margin-top: 15px;
 }
-.piece--card .piece--cardBody .piece--cardContent {
+.piece__card .piece__cardBody .piece__cardContent {
   padding: 8px 15px;
 }
-.piece--card .piece--cardBody .piece--cardContent .piece--cardText {
+.piece__card .piece__cardBody .piece__cardContent .piece__cardText {
   margin-top: 15px;
 }
-.piece--card .piece--cardFooter {
+.piece__card .piece__cardFooter {
   margin-top: 15px;
   padding: 8px 15px;
   display: flex;

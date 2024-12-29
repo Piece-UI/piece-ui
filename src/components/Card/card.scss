@@ -1,5 +1,5 @@
-.piece--card{
-    .piece--cardHead{
+.piece__card{
+    .piece__cardHead{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -7,32 +7,32 @@
         padding: 8px 15px;
        
     }
-    .piece--text__elipese{
+    .piece__text--elipese{
         max-width: 100px;
         width: 100%;
         overflow-x: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
-    .piece--card-headAction{
+    .piece__card__headAction{
         display: flex;
         align-items: center;
         justify-content: flex-end;
         gap: 15px;
     }
-    .piece--cardBody{
+    .piece__cardBody{
         img{
             margin-top: 15px;
         }
-        .piece--cardContent{
+        .piece__cardContent{
             padding: 8px 15px;
             
-            .piece--cardText{
+            .piece__cardText{
                 margin-top: 15px;
             }
         }
     }
-    .piece--cardFooter{
+    .piece__cardFooter{
         margin-top: 15px;
         padding: 8px 15px;
         display: flex;
