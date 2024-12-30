@@ -1,0 +1,18 @@
+.piece__nav_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+}
+.piece__nav__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    li{
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

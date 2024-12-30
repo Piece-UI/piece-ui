@@ -34,6 +34,9 @@ const ButtonPiece = styled.button`
     }
   }};
 
+  .imgicon{
+    width: 18px;
+  };
   &.btn--disabled{
     opacity: 0.5;
     cursor: not-allowed;
@@ -56,6 +59,7 @@ const Button = ({
     className,
     disabled,
     imgIconAfter}) => (
+
     <ButtonPiece 
         type={type} 
         onClick={onClick}

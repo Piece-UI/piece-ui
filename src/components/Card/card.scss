@@ -1,0 +1,48 @@
+.piece__card{
+    .piece__cardHead{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        padding: 8px 15px;
+       
+    }
+    .piece__text--elipese{
+        max-width: 100px;
+        width: 100%;
+        overflow-x: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    .piece__card__headAction{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .piece__cardBody{
+        img{
+            margin-top: 15px;
+        }
+        .piece__cardContent{
+            padding: 8px 15px;
+            
+            .piece__cardText{
+                margin-top: 15px;
+            }
+        }
+    }
+    .piece__cardFooter{
+        margin-top: 15px;
+        padding: 8px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    
+}
+.img-responisve{
+    width: 100%;
+    height: auto;
+}

@@ -1,37 +1,35 @@
 import './App.css';
-import Button from './components/Button/Button';
 import styled from '@emotion/styled';
+import Navbar from './components/Navbar/Navbar';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ButtonExample from './pages/ButtonExample';
+import CardExample from './pages/CardExample';
+
 
 const FlexBox = styled.div`
   display:grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 5px;
+  row-gap:10px;
   .avatar{
     border-radius: 100%;
   }
 `;
 
-
-const testfn = () => {alert("hello")};
-
 function App() {
+
   return (
-    <FlexBox>
-          <div>
-              <Button 
-                label='Piece Button UI'
-                imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20' 
-                className='avatar'/>}   
-                iconBefore={<i class="fa-solid fa-user"></i>}
-                iconAfter={<i class="fa-solid fa-chevron-right"></i>} 
-                className='btn-primary' 
-                btnSize='large' 
-                rounded='8px' 
-                color='accent--65'
-                disabled={false}
-                onClick={testfn} />
-          </div>
-    </FlexBox>
+    <>
+      <BrowserRouter>
+        <Navbar FlexBox={FlexBox}></Navbar>
+
+        <Routes>
+          <Route path='/buttonExampale' element={<ButtonExample FlexBox={FlexBox}></ButtonExample>}></Route>
+          <Route path='/cardsEaxample' element={<CardExample FlexBox={FlexBox}></CardExample>}></Route>
+        </Routes>
+      </BrowserRouter>
+    </>
+
   );
 }
 
