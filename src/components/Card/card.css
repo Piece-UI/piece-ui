@@ -1,3 +1,4 @@
+@import '../../styles/global.css';
 .piece--card .piece--cardHead {
   display: flex;
   align-items: center;

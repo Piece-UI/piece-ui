@@ -7,6 +7,9 @@ const FlexBox = styled.div`
   display:grid;
   grid-template-columns: repeat(5, 1fr);
   column-gap: 5px;
+  .avatar{
+    border-radius: 100%;
+  }
 `;
 
 const testFn = () =>{alert("Hello")};
@@ -16,8 +19,8 @@ function App() {
     <>
       <FlexBox>
         <Card 
-          bgCustomColor='burlywood'
-          textColor='white'
+          bgCustomColor='black'
+          textColor='#ffffff'
           cardRound=' 0 30px 0 30px'
           cardHeading='Lorem Ipsum' 
           actions={[
@@ -55,7 +58,7 @@ function App() {
         <Card 
           bgCustomColor='blanchedalmond'
           textColor='#000'
-          cardRound='  30px 0 30px 0'
+          cardRound='30px 0 30px 0'
           cardHeading='Lorem Ipsum' 
           actions={[
             {icon: 'https://www.svgrepo.com/download/13662/share.svg', onClick: testFn},

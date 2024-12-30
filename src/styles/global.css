@@ -1,0 +1,319 @@
+.bg__accent--19 {
+  background-color: rgba(0, 38, 202, 0.19);
+  color: white;
+}
+
+.bg__accent--100 {
+  background-color: #000075;
+  color: white;
+}
+
+.bg__accent--90 {
+  background-color: rgba(0, 0, 209, 0.9);
+  color: white;
+}
+
+.bg__accent--85 {
+  background-color: rgba(0, 0, 209, 0.85);
+  color: white;
+}
+
+.bg__accent--80 {
+  background-color: rgba(0, 0, 209, 0.8);
+  color: white;
+}
+
+.bg__accent--75 {
+  background-color: rgba(0, 0, 209, 0.75);
+  color: white;
+}
+
+.bg__accent--70 {
+  background-color: rgba(0, 0, 209, 0.7);
+  color: white;
+}
+
+.bg__accent--65 {
+  background-color: rgba(0, 0, 209, 0.65);
+  color: white;
+}
+
+.bg__accent--60 {
+  background-color: rgba(0, 0, 209, 0.6);
+  color: white;
+}
+
+.bg__olive--100 {
+  background-color: #5FD855;
+  color: white;
+}
+
+.bg__olive--90 {
+  background-color: rgba(95, 216, 85, 0.9);
+  color: white;
+}
+
+.bg__olive--85 {
+  background-color: rgba(95, 216, 85, 0.85);
+  color: white;
+}
+
+.bg__olive--80 {
+  background-color: rgba(95, 216, 85, 0.8);
+  color: white;
+}
+
+.bg__olive--75 {
+  background-color: rgba(95, 216, 85, 0.75);
+  color: white;
+}
+
+.bg__olive--70 {
+  background-color: rgba(95, 216, 85, 0.7);
+  color: white;
+}
+
+.bg__olive--65 {
+  background-color: rgba(95, 216, 85, 0.65);
+  color: white;
+}
+
+.bg__olive--60 {
+  background-color: rgba(95, 216, 85, 0.6);
+  color: white;
+}
+
+.bg__olive--19 {
+  background-color: rgba(44, 148, 35, 0.19);
+  color: white;
+}
+
+.bg__alert--100 {
+  background-color: #FFB800;
+  color: white;
+}
+
+.bg__alert--90 {
+  background-color: rgba(255, 184, 0, 0.9);
+  color: white;
+}
+
+.bg__alert--85 {
+  background-color: rgba(255, 184, 0, 0.85);
+  color: white;
+}
+
+.bg__alert--80 {
+  background-color: rgba(255, 184, 0, 0.8);
+  color: white;
+}
+
+.bg__alert--75 {
+  background-color: rgba(255, 184, 0, 0.75);
+  color: white;
+}
+
+.bg__alert--70 {
+  background-color: rgba(255, 184, 0, 0.7);
+  color: white;
+}
+
+.bg__alert--65 {
+  background-color: rgba(255, 184, 0, 0.65);
+  color: white;
+}
+
+.bg__alert--60 {
+  background-color: rgba(255, 184, 0, 0.6);
+  color: white;
+}
+
+.bg__alert--19 {
+  background-color: rgba(197, 157, 57, 0.19);
+  color: white;
+}
+
+.bg__error--100 {
+  background-color: #C73E1D;
+  color: white;
+}
+
+.bg__error--90 {
+  background-color: rgba(199, 62, 29, 0.9);
+  color: white;
+}
+
+.bg__error--85 {
+  background-color: rgba(199, 62, 29, 0.85);
+  color: white;
+}
+
+.bg__error--80 {
+  background-color: rgba(199, 62, 29, 0.8);
+  color: white;
+}
+
+.bg__error--75 {
+  background-color: rgba(199, 62, 29, 0.75);
+  color: white;
+}
+
+.bg__error--70 {
+  background-color: rgba(199, 62, 29, 0.7);
+  color: white;
+}
+
+.bg__error--65 {
+  background-color: rgba(199, 62, 29, 0.65);
+  color: white;
+}
+
+.bg__error--60 {
+  background-color: rgba(199, 62, 29, 0.6);
+  color: white;
+}
+
+.bg__error--19 {
+  background-color: rgba(199, 62, 29, 0.19);
+  color: white;
+}
+
+.bg__secondary--100 {
+  background-color: #6c757d;
+  color: white;
+}
+
+.bg__secondary--90 {
+  background-color: rgba(108, 117, 125, 0.9);
+  color: white;
+}
+
+.bg__secondary--85 {
+  background-color: rgba(108, 117, 125, 0.85);
+  color: white;
+}
+
+.bg__secondary--80 {
+  background-color: rgba(108, 117, 125, 0.8);
+  color: white;
+}
+
+.bg__secondary--75 {
+  background-color: rgba(108, 117, 125, 0.75);
+  color: white;
+}
+
+.bg__secondary--70 {
+  background-color: rgba(108, 117, 125, 0.7);
+  color: white;
+}
+
+.bg__secondary--65 {
+  background-color: rgba(108, 117, 125, 0.65);
+  color: white;
+}
+
+.bg__secondary--60 {
+  background-color: rgba(108, 117, 125, 0.6);
+  color: white;
+}
+
+.bg__dark--100 {
+  background-color: #303030;
+  color: white;
+}
+
+.bg__dark--90 {
+  background-color: rgba(48, 48, 48, 0.9);
+  color: white;
+}
+
+.bg__dark--85 {
+  background-color: rgba(48, 48, 48, 0.85);
+  color: white;
+}
+
+.bg__dark--80 {
+  background-color: rgba(48, 48, 48, 0.8);
+  color: white;
+}
+
+.bg__dark--75 {
+  background-color: rgba(48, 48, 48, 0.75);
+  color: white;
+}
+
+.bg__dark--70 {
+  background-color: rgba(48, 48, 48, 0.7);
+  color: white;
+}
+
+.bg__dark--65 {
+  background-color: rgba(48, 48, 48, 0.65);
+  color: white;
+}
+
+.bg__dark--60 {
+  background-color: rgba(48, 48, 48, 0.6);
+  color: white;
+}
+
+.bg__critical--100 {
+  background-color: #e700e7;
+  color: white;
+}
+
+.bg__critical--90 {
+  background-color: rgba(231, 0, 231, 0.9);
+  color: white;
+}
+
+.bg__critical--85 {
+  background-color: rgba(231, 0, 231, 0.85);
+  color: white;
+}
+
+.bg__critical--80 {
+  background-color: rgba(231, 0, 231, 0.8);
+  color: white;
+}
+
+.bg__critical--75 {
+  background-color: rgba(231, 0, 231, 0.75);
+  color: white;
+}
+
+.bg__critical--70 {
+  background-color: rgba(231, 0, 231, 0.7);
+  color: white;
+}
+
+.bg__critical--65 {
+  background-color: rgba(231, 0, 231, 0.65);
+  color: white;
+}
+
+.bg__critical--60 {
+  background-color: rgba(231, 0, 231, 0.6);
+  color: white;
+}
+
+.bg__other--gray {
+  background-color: #292929;
+  color: white;
+}
+
+.bg__other--disable-100 {
+  background-color: rgba(102, 102, 102, 0.86);
+  color: white;
+}
+
+.bg__other--light-100 {
+  background-color: #ffffff;
+  color: white;
+}
+
+.bg__other--dark-100 {
+  background-color: #303030;
+  color: white;
+}/*# sourceMappingURL=global.css.map */

@@ -7,6 +7,7 @@ const CardPiece = styled.div`
     background-color: ${({bgCustomColor}) => bgCustomColor};
     border-radius:${({cardRound})=>cardRound};
     padding:15px;
+    color: ${({textColor})=> textColor};
 `;
 // footer, classname, typo, events
 const Card = ({
@@ -20,10 +21,9 @@ const Card = ({
   textColor,
   cardRound,
   footerActions=[]
-
 }) => {
   return (
-    <CardPiece className="piece--card"  bgCustomColor={bgCustomColor} cardRound={cardRound} style={{color:(bgCustomColor)? textColor:''}}>
+    <CardPiece className={`piece--card ${bgColorclass}`} textColor={textColor}  bgCustomColor={bgCustomColor} cardRound={cardRound}>
       <div className="piece--cardHead">
         <h2 className={`piece--cardHeading ${(cardHeading.length> 10)? 'piece--text__elipese':''}`} title={cardHeading}>{cardHeading}</h2>
         <div className="piece--card-headAction">
