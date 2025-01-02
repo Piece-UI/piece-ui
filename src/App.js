@@ -17,13 +17,13 @@ const FlexBox = styled.div`
 `;
 
 function App() {
-
   return (
     <>
       <BrowserRouter>
         <Navbar FlexBox={FlexBox}></Navbar>
-
+        <br />
         <Routes>
+          <Route path='/' element={<ButtonExample FlexBox={FlexBox}></ButtonExample>}></Route>
           <Route path='/buttonExampale' element={<ButtonExample FlexBox={FlexBox}></ButtonExample>}></Route>
           <Route path='/cardsEaxample' element={<CardExample FlexBox={FlexBox}></CardExample>}></Route>
         </Routes>
