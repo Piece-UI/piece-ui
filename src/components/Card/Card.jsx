@@ -6,7 +6,6 @@ import styled from "@emotion/styled";
 const CardPiece = styled.div`
   background-color: ${({ bgCustomColor }) => bgCustomColor};
   border-radius: ${({ cardRound }) => cardRound};
-  padding: 15px;
   border: ${({ border }) => border};
 `;
 // footer, classname, typo, events
@@ -42,10 +41,10 @@ const Card = ({
         </h2>
         <div className="piece__card__headAction">
           {actions.map((action, index) => (
-            <div key={index}>
-              {action.image && <span>{action.image}</span>}
-              {action.icon && <span>{action.icon}</span>}
-            </div>
+            <span key={index}>
+              {action.image && action.image}
+              {action.icon && action.icon}
+            </span>
           ))}
         </div>
       </div>
@@ -78,6 +77,7 @@ const Card = ({
                 key={index}
                 className={footerAction.className}
                 color={footerAction.color}
+                iconAfter={footerAction.iconAfter}
                 iconBefore={footerAction.iconBefore}
                 label={footerAction.btnText}
               ></Button>
