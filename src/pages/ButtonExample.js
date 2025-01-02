@@ -11,7 +11,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -25,7 +25,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -39,7 +39,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -53,7 +53,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -67,7 +67,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -81,7 +81,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'
@@ -95,7 +95,7 @@ const ButtonExample = ({ FlexBox }) => {
                 <Button
                     label='Piece Button UI'
                     imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
-                        className='avatar' />}
+                        className='avatar' alt="avatar" />}
                     iconBefore={<i className="fa-solid fa-user"></i>}
                     iconAfter={<i className="fa-solid fa-chevron-right"></i>}
                     className='btn-primary'

@@ -7,9 +7,11 @@ const CardPiece = styled.div`
   background-color: ${({ bgCustomColor }) => bgCustomColor};
   border-radius: ${({ cardRound }) => cardRound};
   padding: 15px;
+  border: ${({ border }) => border};
 `;
 // footer, classname, typo, events
 const Card = ({
+  border,
   cardHeading,
   actions = [],
   cadrImg,
@@ -26,6 +28,7 @@ const Card = ({
       className={`piece__card ${bgColor}`}
       bgCustomColor={bgCustomColor}
       cardRound={cardRound}
+      border={border}
       style={{ color: bgCustomColor ? textColor : "" }}
     >
       <div className="piece__cardHead">
@@ -40,13 +43,8 @@ const Card = ({
         <div className="piece__card__headAction">
           {actions.map((action, index) => (
             <div key={index}>
-              <img
-                src={action.icon}
-                alt={action.icon}
-                width="25"
-                height="25"
-                onClick={action.onClick}
-              />
+              {action.image && <span>{action.image}</span>}
+              {action.icon && <span>{action.icon}</span>}
             </div>
           ))}
         </div>
@@ -72,15 +70,21 @@ const Card = ({
           {cardText ? <p className="piece__cardText">{cardText}</p> : ""}
         </div>
       </div>
-      {/* {footerActions && (
+      {footerActions && (
         <div className="piece__cardFooter">
-          {footerActions.map((footerAction, index) => (
-              return (
-
-              )
-          ))}
+          {footerActions.map((footerAction, index) => {
+            return (
+              <Button
+                key={index}
+                className={footerAction.className}
+                color={footerAction.color}
+                iconBefore={footerAction.iconBefore}
+                label={footerAction.btnText}
+              ></Button>
+            );
+          })}
         </div>
-      )} */}
+      )}
     </CardPiece>
   );
 };

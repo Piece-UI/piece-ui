@@ -1,21 +1,21 @@
 import Card from "../components/Card/Card";
 
-const CardExample = ({FlexBox}) => {
-    const testFn = ()=>{
+const CardExample = ({ FlexBox }) => {
+    const testFn = () => {
         alert('Hi Button')
     }
     return (
         <FlexBox>
             <Card
+                border='1px solid black'
                 // bgCustomColor='burlywood'
                 // textColor='white'
                 bgColor='alert-60'
                 cardRound=' 0 30px 0 30px'
                 cardHeading='Lorem Ipsum'
                 actions={[
-                    { icon: 'https://www.svgrepo.com/download/13662/share.svg', onClick: testFn },
-                    { icon: 'https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/settings-87.png', onClick: testFn },
-                    { icon: 'https://www.svgrepo.com/show/178323/cross-close.svg', onClick: testFn },
+                    { image: <img src="https://www.svgrepo.com/download/13662/share.svg" onClick={testFn} width={25} height={25} alt="img" /> },
+                    { icon: <i className="fa-solid fa-user"></i> },
                 ]}
                 cadrImg='https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg'
                 cardBodyTitle='Lorem Ipsum'
@@ -23,23 +23,31 @@ const CardExample = ({FlexBox}) => {
                 footerActions={[
                     {
                         btnText: 'Cancel',
-                        className:'btn-primary',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     },
                     {
                         btnText: 'Ok',
-                        color: 'accent-60',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     },
                     {
                         btnText: 'Ok',
-                        color: 'accent-70',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     },
                     {
                         btnText: 'Ok',
-                        color: 'accent-80',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     }
                 ]}
             >
@@ -50,9 +58,9 @@ const CardExample = ({FlexBox}) => {
                 cardRound='  30px 0 30px 0'
                 cardHeading='Lorem Ipsum'
                 actions={[
-                    { icon: 'https://www.svgrepo.com/download/13662/share.svg', onClick: testFn },
-                    { icon: 'https://icons.veryicon.com/png/o/internet--web/55-common-web-icons/settings-87.png', onClick: testFn },
-                    { icon: 'https://www.svgrepo.com/show/178323/cross-close.svg', onClick: testFn },
+                    { image: <img src="https://www.svgrepo.com/download/13662/share.svg" onClick={testFn} width={25} height={25} alt="img" /> },
+                    { icon: <i className="fa-solid fa-user"></i> },
+                    { image: <img src="https://www.svgrepo.com/show/178323/cross-close.svg" onClick={testFn} width={25} height={25} alt="img" /> }
                 ]}
                 cadrImg='https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg'
                 cardBodyTitle='Lorem Ipsum'
@@ -60,23 +68,31 @@ const CardExample = ({FlexBox}) => {
                 footerActions={[
                     {
                         btnText: 'Cancel',
-                        className:'btn-primary',
-                        onClick: testFn
-                    },
-                    {
-                        btnText: 'Submit',
-                        color: 'accent-60',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     },
                     {
                         btnText: 'Ok',
-                        color: 'accent-70',
-                        onClick: testFn
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     },
                     {
-                        btnText: 'Yes',
-                        color: 'accent-80',
-                        onClick: testFn
+                        btnText: 'Ok',
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
+                    },
+                    {
+                        btnText: 'Ok',
+                        className: 'btn-primary',
+                        color: 'accent--65',
+                        onClick: testFn,
+                        iconBefore: <i className="fa-solid fa-user"></i>
                     }
                 ]}
             >
