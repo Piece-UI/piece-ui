@@ -1,4 +1,5 @@
 import Card from "../components/Card/Card";
+import Button from "../components/Button/Button";
 
 const CardExample = ({ FlexBox }) => {
     const testFn = () => {
@@ -20,36 +21,32 @@ const CardExample = ({ FlexBox }) => {
                 cadrImg='https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg'
                 cardBodyTitle='Lorem Ipsum'
                 cardText="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the when an unknown"
-                footerActions={[
-                    {
-                        btnText: 'Cancel',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconAfter: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconAfter: <i className="fa-solid fa-user"></i>
-                    }
-                ]}
+                footerContent={
+                    <>
+                    <Button
+                        label='Piece Button UI'
+                        iconBefore={<i className="fa-solid fa-user"></i>}
+                        iconAfter={<i className="fa-solid fa-chevron-right"></i>}
+                        className='btn-primary'
+                        btnSize='large'
+                        rounded='8px'
+                        color='accent--65'
+                        disabled={false}
+                        onClick={testFn} />
+
+                        <Button
+                        label='Piece Button UI'
+                        imgIconBefore={<img src='https://img.freepik.com/free-psd/3d-render-avatar-character_23-2150611765.jpg' width='20' height='20'
+                            className='avatar' alt="avatar" />}
+                        iconAfter={<i className="fa-solid fa-chevron-right"></i>}
+                        className='btn-primary'
+                        btnSize='md'
+                        rounded='8px'
+                        color='accent--65'
+                        disabled={false}
+                        onClick={testFn} />
+                    </>    
+                }
             >
             </Card>
             <Card
@@ -66,36 +63,9 @@ const CardExample = ({ FlexBox }) => {
                 cadrImg='https://gratisography.com/wp-content/uploads/2024/10/gratisography-cool-cat-800x525.jpg'
                 cardBodyTitle='Lorem Ipsum'
                 cardText="is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry' s standard dummy text ever since the when an unknown"
-                footerActions={[
-                    {
-                        btnText: 'Cancel',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
-                    },
-                    {
-                        btnText: 'Ok',
-                        className: 'btn-primary',
-                        color: 'accent--65',
-                        onClick: testFn,
-                        iconBefore: <i className="fa-solid fa-user"></i>
+                footerContent={
+                        <div>is simply dummy text of the printing and typesetting industry.</div>
                     }
-                ]}
             >
             </Card>
         </FlexBox>
