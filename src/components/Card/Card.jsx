@@ -6,10 +6,11 @@ import styled from "@emotion/styled";
 const CardPiece = styled.div`
   background-color: ${({ bgCustomColor }) => bgCustomColor};
   border-radius: ${({ cardRound }) => cardRound};
-  padding: 15px;
+  border: ${({ border }) => border};
 `;
 // footer, classname, typo, events
 const Card = ({
+  border,
   cardHeading,
   actions = [],
   cadrImg,
@@ -19,13 +20,14 @@ const Card = ({
   bgColor,
   textColor,
   cardRound,
-  footerActions = [],
+  footerContent
 }) => {
   return (
     <CardPiece
       className={`piece__card ${bgColor}`}
       bgCustomColor={bgCustomColor}
       cardRound={cardRound}
+      border={border}
       style={{ color: bgCustomColor ? textColor : "" }}
     >
       <div className="piece__cardHead">
@@ -39,15 +41,10 @@ const Card = ({
         </h2>
         <div className="piece__card__headAction">
           {actions.map((action, index) => (
-            <div key={index}>
-              <img
-                src={action.icon}
-                alt={action.icon}
-                width="25"
-                height="25"
-                onClick={action.onClick}
-              />
-            </div>
+            <span key={index}>
+              {action.image && action.image}
+              {action.icon && action.icon}
+            </span>
           ))}
         </div>
       </div>
@@ -72,15 +69,12 @@ const Card = ({
           {cardText ? <p className="piece__cardText">{cardText}</p> : ""}
         </div>
       </div>
-      {/* {footerActions && (
+      {footerContent && 
         <div className="piece__cardFooter">
-          {footerActions.map((footerAction, index) => (
-              return (
-
-              )
-          ))}
+            {footerContent}
         </div>
-      )} */}
+      }
+        
     </CardPiece>
   );
 };
