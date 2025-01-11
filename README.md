@@ -38,7 +38,7 @@ This is a reusable component library for React. Below is a table that lists all 
 |---------------|-----------------------------------------------------------|--------------|-------------|
 | Button        | A customizable button component                           | In Progress  | 🔘           |
 | Input         | A customizable input field                                | Pending      | 📝           |
-| Card          | A reusable card component for displaying content         | Pending      | 📄           |
+| Card          | A reusable card component for displaying content          | In Progress  | 📄           |
 | Modal         | A modal dialog box for overlays                           | Pending      | 🛑           |
 | Table         | A customizable table component                            | Pending      | 📊           |
 | Dropdown      | A dropdown menu component                                 | Pending      | 🔽           |
