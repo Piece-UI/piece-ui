@@ -20,7 +20,7 @@ const Card = ({
   bgColor,
   textColor,
   cardRound,
-  footerActions = [],
+  footerContent
 }) => {
   return (
     <CardPiece
@@ -69,22 +69,12 @@ const Card = ({
           {cardText ? <p className="piece__cardText">{cardText}</p> : ""}
         </div>
       </div>
-      {footerActions && (
+      {footerContent && 
         <div className="piece__cardFooter">
-          {footerActions.map((footerAction, index) => {
-            return (
-              <Button
-                key={index}
-                className={footerAction.className}
-                color={footerAction.color}
-                iconAfter={footerAction.iconAfter}
-                iconBefore={footerAction.iconBefore}
-                label={footerAction.btnText}
-              ></Button>
-            );
-          })}
+            {footerContent}
         </div>
-      )}
+      }
+        
     </CardPiece>
   );
 };
