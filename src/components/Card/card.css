@@ -1,9 +1,13 @@
+.piece__card .piece__cardHeading {
+  font-size: 18px;
+  font-weight: 700;
+}
 .piece__card .piece__cardHead {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding: 8px 15px;
+  padding: 15px;
 }
 .piece__card .piece__text--elipese {
   max-width: 100px;
@@ -18,18 +22,14 @@
   justify-content: flex-end;
   gap: 15px;
 }
-.piece__card .piece__cardBody img {
-  margin-top: 15px;
+.piece__card .piece__card__headAction span {
+  cursor: pointer;
 }
 .piece__card .piece__cardBody .piece__cardContent {
   padding: 8px 15px;
 }
-.piece__card .piece__cardBody .piece__cardContent .piece__cardText {
-  margin-top: 15px;
-}
 .piece__card .piece__cardFooter {
-  margin-top: 15px;
-  padding: 8px 15px;
+  padding: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
