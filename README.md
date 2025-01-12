@@ -36,16 +36,16 @@ This is a reusable component library for React. Below is a table that lists all 
 
 | Component     | Description                                               | Status       | Icon        |
 |---------------|-----------------------------------------------------------|--------------|-------------|
-| Button        | A customizable button component                           | In Progress  | 🔘           |
+| Button        | A customizable button component                           | Ready To Use  | 🔘           |
 | Input         | A customizable input field                                | Pending      | 📝           |
-| Card          | A reusable card component for displaying content          | In Progress  | 📄           |
+| Card          | A reusable card component for displaying content          | Complete (Review)  | 📄           |
 | Modal         | A modal dialog box for overlays                           | Pending      | 🛑           |
 | Table         | A customizable table component                            | Pending      | 📊           |
 | Dropdown      | A dropdown menu component                                 | Pending      | 🔽           |
 | Alert         | A customizable alert message component                    | Pending      | ⚠️           |
-| Badge         | A badge component for displaying status or count          | Pending      | 🏷️           |
+| Badge         | A badge component for displaying status or count          | Complete (Review)      | 🏷️           |
 | Avatar        | A component for displaying user profile images            | Pending      | 👤           |
-| Tabs          | A tab navigation component                                | Pending      | 🗂️           |
+| Tabs          | A tab navigation component                                | In Progress      | 🗂️           |
 | Tooltip       | A tooltip component for providing extra information       | Pending      | 💡           |
 | Slider        | A slider component for selecting ranges                   | Pending      | 📏           |
 | Accordion     | An accordion component for collapsible content            | Pending      | ➖           |

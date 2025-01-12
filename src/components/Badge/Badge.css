@@ -1,0 +1,781 @@
+.badge {
+  display: inline-flex;
+  padding: 8px 12px;
+  gap: 4px;
+  align-items: center;
+  font-size: 14px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.piece__badge--accent--19 {
+  background-color: rgba(0, 38, 202, 0.19);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--19 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 38, 202, 0.19);
+  color: rgba(0, 38, 202, 0.19);
+}
+
+.piece__badge--accent--100 {
+  background-color: #000075;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--100 {
+  background-color: transparent;
+  border: 1px solid #000075;
+  color: #000075;
+}
+
+.piece__badge--accent--90 {
+  background-color: rgba(0, 0, 209, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--90 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.9);
+  color: rgba(0, 0, 209, 0.9);
+}
+
+.piece__badge--accent--85 {
+  background-color: rgba(0, 0, 209, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--85 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.85);
+  color: rgba(0, 0, 209, 0.85);
+}
+
+.piece__badge--accent--80 {
+  background-color: rgba(0, 0, 209, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--80 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.8);
+  color: rgba(0, 0, 209, 0.8);
+}
+
+.piece__badge--accent--75 {
+  background-color: rgba(0, 0, 209, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--75 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.75);
+  color: rgba(0, 0, 209, 0.75);
+}
+
+.piece__badge--accent--70 {
+  background-color: rgba(0, 0, 209, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--70 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.7);
+  color: rgba(0, 0, 209, 0.7);
+}
+
+.piece__badge--accent--65 {
+  background-color: rgba(0, 0, 209, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--65 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.65);
+  color: rgba(0, 0, 209, 0.65);
+}
+
+.piece__badge--accent--60 {
+  background-color: rgba(0, 0, 209, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--accent--60 {
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 209, 0.6);
+  color: rgba(0, 0, 209, 0.6);
+}
+
+.piece__badge--olive--100 {
+  background-color: #5FD855;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--100 {
+  background-color: transparent;
+  border: 1px solid #5FD855;
+  color: #5FD855;
+}
+
+.piece__badge--olive--90 {
+  background-color: rgba(95, 216, 85, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--90 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.9);
+  color: rgba(95, 216, 85, 0.9);
+}
+
+.piece__badge--olive--85 {
+  background-color: rgba(95, 216, 85, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--85 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.85);
+  color: rgba(95, 216, 85, 0.85);
+}
+
+.piece__badge--olive--80 {
+  background-color: rgba(95, 216, 85, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--80 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.8);
+  color: rgba(95, 216, 85, 0.8);
+}
+
+.piece__badge--olive--75 {
+  background-color: rgba(95, 216, 85, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--75 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.75);
+  color: rgba(95, 216, 85, 0.75);
+}
+
+.piece__badge--olive--70 {
+  background-color: rgba(95, 216, 85, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--70 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.7);
+  color: rgba(95, 216, 85, 0.7);
+}
+
+.piece__badge--olive--65 {
+  background-color: rgba(95, 216, 85, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--65 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.65);
+  color: rgba(95, 216, 85, 0.65);
+}
+
+.piece__badge--olive--60 {
+  background-color: rgba(95, 216, 85, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--60 {
+  background-color: transparent;
+  border: 1px solid rgba(95, 216, 85, 0.6);
+  color: rgba(95, 216, 85, 0.6);
+}
+
+.piece__badge--olive--19 {
+  background-color: rgba(44, 148, 35, 0.19);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--olive--19 {
+  background-color: transparent;
+  border: 1px solid rgba(44, 148, 35, 0.19);
+  color: rgba(44, 148, 35, 0.19);
+}
+
+.piece__badge--alert--100 {
+  background-color: #FFB800;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--100 {
+  background-color: transparent;
+  border: 1px solid #FFB800;
+  color: #FFB800;
+}
+
+.piece__badge--alert--90 {
+  background-color: rgba(255, 184, 0, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--90 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.9);
+  color: rgba(255, 184, 0, 0.9);
+}
+
+.piece__badge--alert--85 {
+  background-color: rgba(255, 184, 0, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--85 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.85);
+  color: rgba(255, 184, 0, 0.85);
+}
+
+.piece__badge--alert--80 {
+  background-color: rgba(255, 184, 0, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--80 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.8);
+  color: rgba(255, 184, 0, 0.8);
+}
+
+.piece__badge--alert--75 {
+  background-color: rgba(255, 184, 0, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--75 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.75);
+  color: rgba(255, 184, 0, 0.75);
+}
+
+.piece__badge--alert--70 {
+  background-color: rgba(255, 184, 0, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--70 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.7);
+  color: rgba(255, 184, 0, 0.7);
+}
+
+.piece__badge--alert--65 {
+  background-color: rgba(255, 184, 0, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--65 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.65);
+  color: rgba(255, 184, 0, 0.65);
+}
+
+.piece__badge--alert--60 {
+  background-color: rgba(255, 184, 0, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--60 {
+  background-color: transparent;
+  border: 1px solid rgba(255, 184, 0, 0.6);
+  color: rgba(255, 184, 0, 0.6);
+}
+
+.piece__badge--alert--19 {
+  background-color: rgba(197, 157, 57, 0.19);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--alert--19 {
+  background-color: transparent;
+  border: 1px solid rgba(197, 157, 57, 0.19);
+  color: rgba(197, 157, 57, 0.19);
+}
+
+.piece__badge--error--100 {
+  background-color: #C73E1D;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--100 {
+  background-color: transparent;
+  border: 1px solid #C73E1D;
+  color: #C73E1D;
+}
+
+.piece__badge--error--90 {
+  background-color: rgba(199, 62, 29, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--90 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.9);
+  color: rgba(199, 62, 29, 0.9);
+}
+
+.piece__badge--error--85 {
+  background-color: rgba(199, 62, 29, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--85 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.85);
+  color: rgba(199, 62, 29, 0.85);
+}
+
+.piece__badge--error--80 {
+  background-color: rgba(199, 62, 29, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--80 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.8);
+  color: rgba(199, 62, 29, 0.8);
+}
+
+.piece__badge--error--75 {
+  background-color: rgba(199, 62, 29, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--75 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.75);
+  color: rgba(199, 62, 29, 0.75);
+}
+
+.piece__badge--error--70 {
+  background-color: rgba(199, 62, 29, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--70 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.7);
+  color: rgba(199, 62, 29, 0.7);
+}
+
+.piece__badge--error--65 {
+  background-color: rgba(199, 62, 29, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--65 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.65);
+  color: rgba(199, 62, 29, 0.65);
+}
+
+.piece__badge--error--60 {
+  background-color: rgba(199, 62, 29, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--60 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.6);
+  color: rgba(199, 62, 29, 0.6);
+}
+
+.piece__badge--error--19 {
+  background-color: rgba(199, 62, 29, 0.19);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--error--19 {
+  background-color: transparent;
+  border: 1px solid rgba(199, 62, 29, 0.19);
+  color: rgba(199, 62, 29, 0.19);
+}
+
+.piece__badge--secondary--100 {
+  background-color: #6c757d;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--100 {
+  background-color: transparent;
+  border: 1px solid #6c757d;
+  color: #6c757d;
+}
+
+.piece__badge--secondary--90 {
+  background-color: rgba(108, 117, 125, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--90 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.9);
+  color: rgba(108, 117, 125, 0.9);
+}
+
+.piece__badge--secondary--85 {
+  background-color: rgba(108, 117, 125, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--85 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.85);
+  color: rgba(108, 117, 125, 0.85);
+}
+
+.piece__badge--secondary--80 {
+  background-color: rgba(108, 117, 125, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--80 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.8);
+  color: rgba(108, 117, 125, 0.8);
+}
+
+.piece__badge--secondary--75 {
+  background-color: rgba(108, 117, 125, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--75 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.75);
+  color: rgba(108, 117, 125, 0.75);
+}
+
+.piece__badge--secondary--70 {
+  background-color: rgba(108, 117, 125, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--70 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.7);
+  color: rgba(108, 117, 125, 0.7);
+}
+
+.piece__badge--secondary--65 {
+  background-color: rgba(108, 117, 125, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--65 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.65);
+  color: rgba(108, 117, 125, 0.65);
+}
+
+.piece__badge--secondary--60 {
+  background-color: rgba(108, 117, 125, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--secondary--60 {
+  background-color: transparent;
+  border: 1px solid rgba(108, 117, 125, 0.6);
+  color: rgba(108, 117, 125, 0.6);
+}
+
+.piece__badge--dark--100 {
+  background-color: #303030;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--100 {
+  background-color: transparent;
+  border: 1px solid #303030;
+  color: #303030;
+}
+
+.piece__badge--dark--90 {
+  background-color: rgba(48, 48, 48, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--90 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.9);
+  color: rgba(48, 48, 48, 0.9);
+}
+
+.piece__badge--dark--85 {
+  background-color: rgba(48, 48, 48, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--85 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.85);
+  color: rgba(48, 48, 48, 0.85);
+}
+
+.piece__badge--dark--80 {
+  background-color: rgba(48, 48, 48, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--80 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.8);
+  color: rgba(48, 48, 48, 0.8);
+}
+
+.piece__badge--dark--75 {
+  background-color: rgba(48, 48, 48, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--75 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.75);
+  color: rgba(48, 48, 48, 0.75);
+}
+
+.piece__badge--dark--70 {
+  background-color: rgba(48, 48, 48, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--70 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.7);
+  color: rgba(48, 48, 48, 0.7);
+}
+
+.piece__badge--dark--65 {
+  background-color: rgba(48, 48, 48, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--65 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.65);
+  color: rgba(48, 48, 48, 0.65);
+}
+
+.piece__badge--dark--60 {
+  background-color: rgba(48, 48, 48, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--dark--60 {
+  background-color: transparent;
+  border: 1px solid rgba(48, 48, 48, 0.6);
+  color: rgba(48, 48, 48, 0.6);
+}
+
+.piece__badge--critical--100 {
+  background-color: #e700e7;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--100 {
+  background-color: transparent;
+  border: 1px solid #e700e7;
+  color: #e700e7;
+}
+
+.piece__badge--critical--90 {
+  background-color: rgba(231, 0, 231, 0.9);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--90 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.9);
+  color: rgba(231, 0, 231, 0.9);
+}
+
+.piece__badge--critical--85 {
+  background-color: rgba(231, 0, 231, 0.85);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--85 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.85);
+  color: rgba(231, 0, 231, 0.85);
+}
+
+.piece__badge--critical--80 {
+  background-color: rgba(231, 0, 231, 0.8);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--80 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.8);
+  color: rgba(231, 0, 231, 0.8);
+}
+
+.piece__badge--critical--75 {
+  background-color: rgba(231, 0, 231, 0.75);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--75 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.75);
+  color: rgba(231, 0, 231, 0.75);
+}
+
+.piece__badge--critical--70 {
+  background-color: rgba(231, 0, 231, 0.7);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--70 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.7);
+  color: rgba(231, 0, 231, 0.7);
+}
+
+.piece__badge--critical--65 {
+  background-color: rgba(231, 0, 231, 0.65);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--65 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.65);
+  color: rgba(231, 0, 231, 0.65);
+}
+
+.piece__badge--critical--60 {
+  background-color: rgba(231, 0, 231, 0.6);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--critical--60 {
+  background-color: transparent;
+  border: 1px solid rgba(231, 0, 231, 0.6);
+  color: rgba(231, 0, 231, 0.6);
+}
+
+.piece__badge--other--gray {
+  background-color: #292929;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--other--gray {
+  background-color: transparent;
+  border: 1px solid #292929;
+  color: #292929;
+}
+
+.piece__badge--other--disable-100 {
+  background-color: rgba(102, 102, 102, 0.86);
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--other--disable-100 {
+  background-color: transparent;
+  border: 1px solid rgba(102, 102, 102, 0.86);
+  color: rgba(102, 102, 102, 0.86);
+}
+
+.piece__badge--other--light-100 {
+  background-color: #ffffff;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--other--light-100 {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.piece__badge--other--dark-100 {
+  background-color: #303030;
+  color: #ffffff;
+  transition-duration: 0.2s;
+}
+
+.piece__badge--outline--other--dark-100 {
+  background-color: transparent;
+  border: 1px solid #303030;
+  color: #303030;
+}/*# sourceMappingURL=Badge.css.map */

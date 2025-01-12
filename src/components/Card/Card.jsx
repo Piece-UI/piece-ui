@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Button/Button";
 import "./card.css";
 import styled from "@emotion/styled";
 

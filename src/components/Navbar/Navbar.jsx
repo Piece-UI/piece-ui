@@ -22,6 +22,9 @@ const NavBar = ()=>{
                             <Link to='cardsEaxample' className='piece__nav_item'>Card Example</Link>
                         </li>
                         <li>
+                            <Link to='badgeExample' className='piece__nav_item'>Badge Example</Link>
+                        </li>
+                        <li>
                             <Link to='navExamples' className='piece__nav_item'>Nav Example</Link>
                         </li>
                         <li>
